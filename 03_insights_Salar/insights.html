@@ -1,0 +1,145 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Systems Limited Clone - Insights</title>
+    <link rel="stylesheet" href="../common/bootstrap.min.css">
+    <link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@300;400;500;600;700&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+
+    <!-- Navbar -->
+    <nav class="navbar navbar-expand-lg fixed-top" id="mainNavbar">
+        <div class="container">
+            <!-- Logo -->
+            <a class="navbar-brand" href="../01_home_Yawar/index.html">
+                <img src="../01_home_Yawar/assets/logo-white.svg" alt="Systems Limited" class="logo-white" id="logoWhite">
+                <img src="../01_home_Yawar/assets/logo-dark.svg" alt="Systems Limited" class="logo-dark d-none" id="logoDark">
+            </a>
+
+            <!-- Mobile Toggle -->
+            <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav">
+                <span class="navbar-toggler-icon"></span>
+            </button>
+
+            <!-- Nav Links -->
+            <div class="collapse navbar-collapse" id="navbarNav">
+                <ul class="navbar-nav ms-auto">
+                    <li class="nav-item">
+                        <a class="nav-link" href="../01_home_Yawar/index.html">Home</a>
+                    </li>
+                    <li class="nav-item dropdown">
+                        <a class="nav-link dropdown-toggle" href="../02_services_Inayat/services.html" id="servicesDropdown" role="button" data-bs-toggle="dropdown">
+                            Services
+                        </a>
+                        <ul class="dropdown-menu">
+                            <li><a class="dropdown-item" href="../02_services_Inayat/services.html">All Services</a></li>
+                            <li><a class="dropdown-item" href="../02_services_Inayat/services.html#digital">Digital Transformation</a></li>
+                            <li><a class="dropdown-item" href="../02_services_Inayat/services.html#consulting">Consulting</a></li>
+                            <li><a class="dropdown-item" href="../02_services_Inayat/services.html#software">Software Development</a></li>
+                        </ul>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link active" href="../03_insights_Salar/insights.html">Insights</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="../04_contact_Misha/contact.html">Contact</a>
+                    </li>
+                </ul>
+                <!-- Search Icon -->
+                <div class="nav-search ms-3">
+                    <button class="btn btn-link nav-link" id="searchBtn">
+                        <i class="fas fa-search"></i>
+                    </button>
+                </div>
+            </div>
+        </div>
+    </nav>
+
+    <!-- Search Overlay -->
+    <div class="search-overlay" id="searchOverlay">
+        <button class="close-search" id="closeSearch">
+            <i class="fas fa-times"></i>
+        </button>
+        <div class="search-container">
+            <input type="text" class="search-input" placeholder="Search...">
+            <button class="search-submit"><i class="fas fa-search"></i></button>
+        </div>
+    </div>
+
+    <!-- Main Content -->
+    <main>
+        <!-- Page Header -->
+        <section class="page-header">
+            <div class="container">
+                <h1 class="page-title">Insights</h1>
+                <p class="page-subtitle">Latest news, articles and thought leadership</p>
+            </div>
+        </section>
+
+        <!-- Insights Content Goes Here -->
+        <section class="content-section">
+            <div class="container">
+                <!-- Member 3 adds content here -->
+            </div>
+        </section>
+    </main>
+
+    <!-- Footer -->
+    <footer class="footer">
+        <div class="footer-top">
+            <div class="container">
+                <div class="row">
+                    <div class="col-lg-4 col-md-6 mb-4">
+                        <h6>About Us</h6>
+                        <p class="footer-text">Systems Limited is a global technology company delivering innovative solutions to enterprises worldwide.</p>
+                        <div class="social-links">
+                            <a href="#"><i class="fab fa-linkedin-in"></i></a>
+                            <a href="#"><i class="fab fa-twitter"></i></a>
+                            <a href="#"><i class="fab fa-facebook-f"></i></a>
+                            <a href="#"><i class="fab fa-youtube"></i></a>
+                        </div>
+                    </div>
+                    <div class="col-lg-2 col-md-6 mb-4">
+                        <h6>Quick Links</h6>
+                        <ul class="footer-links">
+                            <li><a href="../01_home_Yawar/index.html">Home</a></li>
+                            <li><a href="../02_services_Inayat/services.html">Services</a></li>
+                            <li><a href="../03_insights_Salar/insights.html">Insights</a></li>
+                            <li><a href="../04_contact_Misha/contact.html">Contact</a></li>
+                        </ul>
+                    </div>
+                    <div class="col-lg-3 col-md-6 mb-4">
+                        <h6>Services</h6>
+                        <ul class="footer-links">
+                            <li><a href="#">Digital Transformation</a></li>
+                            <li><a href="#">Cloud Solutions</a></li>
+                            <li><a href="#">Data Analytics</a></li>
+                            <li><a href="#">Enterprise Solutions</a></li>
+                        </ul>
+                    </div>
+                    <div class="col-lg-3 col-md-6 mb-4">
+                        <h6>Contact Info</h6>
+                        <ul class="footer-contact">
+                            <li><i class="fas fa-map-marker-alt"></i> Lahore, Pakistan</li>
+                            <li><i class="fas fa-phone"></i> +92 42 111-797-836</li>
+                            <li><i class="fas fa-envelope"></i> info@systemsltd.com</li>
+                        </ul>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <div class="footer-bottom">
+            <div class="container">
+                <p>&copy; 2026 Systems Limited Clone - Web Engineering Semester Project</p>
+            </div>
+        </div>
+    </footer>
+
+    <script src="../common/bootstrap.bundle.min.js"></script>
+    <script src="script.js"></script>
+</body>
+</html>

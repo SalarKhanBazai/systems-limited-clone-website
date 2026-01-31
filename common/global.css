@@ -1,0 +1,24 @@
+/* Variables, reset, header, and footer */
+:root {
+  /* Branding Colors */
+  --systems-blue: #0047AB;    /* Primary Brand Blue */
+  --systems-dark: #121212;    /* Near Black for Text/Backgrounds */
+  --systems-light: #F8F9FA;   /* Light Grey Backgrounds */
+  --systems-gray: #6C757D;    /* Secondary Text */
+  
+  /* Layout Constants */
+  --nav-height: 80px;
+  --transition-smooth: all 0.3s ease-in-out;
+}
+
+/* Base Styles */
+body {
+  font-family: 'Montserrat', sans-serif; /* Similar to Systems Ltd font */
+  overflow-x: hidden;
+}
+
+/* Shared Header/Footer logic here */
+.navbar {
+  height: var(--nav-height);
+  transition: var(--transition-smooth);
+}
