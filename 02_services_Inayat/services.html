@@ -3,43 +3,48 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Systems Limited Clone - Services</title>
+    <title>Our Services | Systems Limited</title>
+    
+    <!-- Bootstrap CSS -->
     <link rel="stylesheet" href="../common/bootstrap.min.css">
-    <link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@300;400;500;600;700&display=swap" rel="stylesheet">
+    
+    <!-- Font Awesome -->
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+    
+    <!-- Google Fonts -->
+    <link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@300;400;500;600;700;800&display=swap" rel="stylesheet">
+    
+    <!-- AOS Animation CSS -->
+    <link href="https://unpkg.com/aos@2.3.1/dist/aos.css" rel="stylesheet">
+    
+    <!-- Custom CSS -->
     <link rel="stylesheet" href="style.css">
 </head>
 <body>
-
-    <!-- Navbar -->
-    <nav class="navbar navbar-expand-lg fixed-top" id="mainNavbar">
+    <!-- Navigation Bar -->
+    <nav class="navbar navbar-expand-lg navbar-dark fixed-top" id="mainNav">
         <div class="container">
-            <!-- Logo -->
             <a class="navbar-brand" href="../01_home_Yawar/index.html">
-                <img src="../01_home_Yawar/assets/logo-white.svg" alt="Systems Limited" class="logo-white" id="logoWhite">
-                <img src="../01_home_Yawar/assets/logo-dark.svg" alt="Systems Limited" class="logo-dark d-none" id="logoDark">
+                <img src="../01_home_Yawar/assets/logo-white.svg" alt="Systems Limited" class="logo-white" height="40">
+                <img src="../01_home_Yawar/assets/logo-dark.svg" alt="Systems Limited" class="logo-dark" height="40">
             </a>
-
-            <!-- Mobile Toggle -->
             <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav">
                 <span class="navbar-toggler-icon"></span>
             </button>
-
-            <!-- Nav Links -->
             <div class="collapse navbar-collapse" id="navbarNav">
-                <ul class="navbar-nav ms-auto">
+                <ul class="navbar-nav ms-auto align-items-center">
                     <li class="nav-item">
                         <a class="nav-link" href="../01_home_Yawar/index.html">Home</a>
                     </li>
                     <li class="nav-item dropdown">
-                        <a class="nav-link dropdown-toggle active" href="../02_services_Inayat/services.html" id="servicesDropdown" role="button" data-bs-toggle="dropdown">
+                        <a class="nav-link dropdown-toggle active" href="#" role="button" data-bs-toggle="dropdown">
                             Services
                         </a>
                         <ul class="dropdown-menu">
-                            <li><a class="dropdown-item" href="../02_services_Inayat/services.html">All Services</a></li>
-                            <li><a class="dropdown-item" href="../02_services_Inayat/services.html#digital">Digital Transformation</a></li>
-                            <li><a class="dropdown-item" href="../02_services_Inayat/services.html#consulting">Consulting</a></li>
-                            <li><a class="dropdown-item" href="../02_services_Inayat/services.html#software">Software Development</a></li>
+                            <li><a class="dropdown-item" href="#digital">Digital</a></li>
+                            <li><a class="dropdown-item" href="#data-analytics">Data & Analytics</a></li>
+                            <li><a class="dropdown-item" href="#cloud">Cloud</a></li>
+                            <li><a class="dropdown-item" href="#business-process">Business Process Services</a></li>
                         </ul>
                     </li>
                     <li class="nav-item">
@@ -48,98 +53,628 @@
                     <li class="nav-item">
                         <a class="nav-link" href="../04_contact_Misha/contact.html">Contact</a>
                     </li>
+                    <li class="nav-item">
+                        <button class="btn-search" id="searchBtn">
+                            <i class="fas fa-search"></i>
+                        </button>
+                    </li>
                 </ul>
-                <!-- Search Icon -->
-                <div class="nav-search ms-3">
-                    <button class="btn btn-link nav-link" id="searchBtn">
-                        <i class="fas fa-search"></i>
-                    </button>
-                </div>
             </div>
         </div>
     </nav>
 
     <!-- Search Overlay -->
     <div class="search-overlay" id="searchOverlay">
-        <button class="close-search" id="closeSearch">
-            <i class="fas fa-times"></i>
-        </button>
-        <div class="search-container">
-            <input type="text" class="search-input" placeholder="Search...">
-            <button class="search-submit"><i class="fas fa-search"></i></button>
+        <div class="search-overlay-content">
+            <button class="search-close" id="searchClose">
+                <i class="fas fa-times"></i>
+            </button>
+            <div class="search-box">
+                <input type="text" placeholder="Search services..." class="search-input">
+                <button class="search-submit">
+                    <i class="fas fa-search"></i>
+                </button>
+            </div>
         </div>
     </div>
 
-    <!-- Main Content -->
-    <main>
-        <!-- Page Header -->
-        <section class="page-header">
-            <div class="container">
-                <h1 class="page-title">Our Services</h1>
-                <p class="page-subtitle">Comprehensive technology solutions for your business</p>
-            </div>
-        </section>
-
-        <!-- Services Content Goes Here -->
-        <section class="content-section">
-            <div class="container">
-                <!-- Member 2 adds content here -->
-            </div>
-        </section>
-    </main>
-
-    <!-- Footer -->
-    <footer class="footer">
-        <div class="footer-top">
-            <div class="container">
-                <div class="row">
-                    <div class="col-lg-4 col-md-6 mb-4">
-                        <h6>About Us</h6>
-                        <p class="footer-text">Systems Limited is a global technology company delivering innovative solutions to enterprises worldwide.</p>
-                        <div class="social-links">
-                            <a href="#"><i class="fab fa-linkedin-in"></i></a>
-                            <a href="#"><i class="fab fa-twitter"></i></a>
-                            <a href="#"><i class="fab fa-facebook-f"></i></a>
-                            <a href="#"><i class="fab fa-youtube"></i></a>
-                        </div>
-                    </div>
-                    <div class="col-lg-2 col-md-6 mb-4">
-                        <h6>Quick Links</h6>
-                        <ul class="footer-links">
-                            <li><a href="../01_home_Yawar/index.html">Home</a></li>
-                            <li><a href="../02_services_Inayat/services.html">Services</a></li>
-                            <li><a href="../03_insights_Salar/insights.html">Insights</a></li>
-                            <li><a href="../04_contact_Misha/contact.html">Contact</a></li>
-                        </ul>
-                    </div>
-                    <div class="col-lg-3 col-md-6 mb-4">
-                        <h6>Services</h6>
-                        <ul class="footer-links">
-                            <li><a href="#">Digital Transformation</a></li>
-                            <li><a href="#">Cloud Solutions</a></li>
-                            <li><a href="#">Data Analytics</a></li>
-                            <li><a href="#">Enterprise Solutions</a></li>
-                        </ul>
-                    </div>
-                    <div class="col-lg-3 col-md-6 mb-4">
-                        <h6>Contact Info</h6>
-                        <ul class="footer-contact">
-                            <li><i class="fas fa-map-marker-alt"></i> Lahore, Pakistan</li>
-                            <li><i class="fas fa-phone"></i> +92 42 111-797-836</li>
-                            <li><i class="fas fa-envelope"></i> info@systemsltd.com</li>
-                        </ul>
+    <!-- Hero Section -->
+    <section class="hero-section">
+        <div class="hero-overlay"></div>
+        <div class="container">
+            <div class="row align-items-center min-vh-100">
+                <div class="col-lg-8 mx-auto text-center hero-content">
+                    <h1 class="hero-title" data-aos="fade-up">Our Services</h1>
+                    <p class="hero-subtitle" data-aos="fade-up" data-aos-delay="100">
+                        Driving innovation and improving lives with AI-driven intelligence
+                    </p>
+                    <div class="hero-scroll" data-aos="fade-up" data-aos-delay="200">
+                        <span>Scroll to Explore</span>
+                        <i class="fas fa-chevron-down"></i>
                     </div>
                 </div>
             </div>
         </div>
-        <div class="footer-bottom">
-            <div class="container">
-                <p>&copy; 2026 Systems Limited Clone - Web Engineering Semester Project</p>
+    </section>
+
+    <!-- Services Overview -->
+    <section class="services-overview py-5">
+        <div class="container">
+            <div class="row">
+                <div class="col-lg-8 mx-auto text-center mb-5">
+                    <h2 class="section-title" data-aos="fade-up">Transforming Businesses Through Technology</h2>
+                    <p class="section-description" data-aos="fade-up" data-aos-delay="100">
+                        We deliver comprehensive digital solutions that empower organizations to innovate, 
+                        scale, and thrive in an increasingly connected world.
+                    </p>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Digital Services -->
+    <section id="digital" class="services-category py-5 bg-light">
+        <div class="container">
+            <div class="row mb-5">
+                <div class="col-lg-10 mx-auto">
+                    <div class="category-header" data-aos="fade-up">
+                        <div class="category-icon">
+                            <i class="fas fa-laptop-code"></i>
+                        </div>
+                        <h2 class="category-title">Digital</h2>
+                        <p class="category-description">
+                            We offer core insights-driven digital transformation capabilities, modernize key systems 
+                            to accelerate innovation, and provide a design-led, unified, and personalized experience.
+                        </p>
+                    </div>
+                </div>
+            </div>
+            <div class="row g-4">
+                <div class="col-lg-4 col-md-6" data-aos="fade-up" data-aos-delay="100">
+                    <div class="service-card">
+                        <div class="service-icon">
+                            <i class="fas fa-lightbulb"></i>
+                        </div>
+                        <h3 class="service-title">Digital Consulting & Strategy</h3>
+                        <p class="service-description">
+                            Transform your business with strategic digital consulting. We help organizations navigate 
+                            digital transformation with comprehensive roadmaps and actionable strategies.
+                        </p>
+                        <ul class="service-features">
+                            <li><i class="fas fa-check"></i> Digital Transformation Roadmap</li>
+                            <li><i class="fas fa-check"></i> Innovation Strategy</li>
+                            <li><i class="fas fa-check"></i> Technology Assessment</li>
+                        </ul>
+                        <a href="#contact-cta" class="service-link">Learn More <i class="fas fa-arrow-right"></i></a>
+                    </div>
+                </div>
+                <div class="col-lg-4 col-md-6" data-aos="fade-up" data-aos-delay="200">
+                    <div class="service-card">
+                        <div class="service-icon">
+                            <i class="fas fa-shopping-cart"></i>
+                        </div>
+                        <h3 class="service-title">Digital Commerce</h3>
+                        <p class="service-description">
+                            Build seamless e-commerce experiences that drive revenue. Our digital commerce solutions 
+                            create engaging customer journeys across all touchpoints.
+                        </p>
+                        <ul class="service-features">
+                            <li><i class="fas fa-check"></i> E-commerce Platform Development</li>
+                            <li><i class="fas fa-check"></i> Omnichannel Solutions</li>
+                            <li><i class="fas fa-check"></i> Customer Experience Optimization</li>
+                        </ul>
+                        <a href="#contact-cta" class="service-link">Learn More <i class="fas fa-arrow-right"></i></a>
+                    </div>
+                </div>
+                <div class="col-lg-4 col-md-6" data-aos="fade-up" data-aos-delay="300">
+                    <div class="service-card">
+                        <div class="service-icon">
+                            <i class="fas fa-cogs"></i>
+                        </div>
+                        <h3 class="service-title">Business Applications</h3>
+                        <p class="service-description">
+                            Streamline operations with intelligent business applications. We implement and customize 
+                            enterprise solutions that enhance productivity and efficiency.
+                        </p>
+                        <ul class="service-features">
+                            <li><i class="fas fa-check"></i> ERP Implementation</li>
+                            <li><i class="fas fa-check"></i> CRM Solutions</li>
+                            <li><i class="fas fa-check"></i> Custom Application Development</li>
+                        </ul>
+                        <a href="#contact-cta" class="service-link">Learn More <i class="fas fa-arrow-right"></i></a>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Data & Analytics Services -->
+    <section id="data-analytics" class="services-category py-5">
+        <div class="container">
+            <div class="row mb-5">
+                <div class="col-lg-10 mx-auto">
+                    <div class="category-header" data-aos="fade-up">
+                        <div class="category-icon">
+                            <i class="fas fa-chart-line"></i>
+                        </div>
+                        <h2 class="category-title">Data & Analytics</h2>
+                        <p class="category-description">
+                            We enable enterprises to transform data into a business advantage by tapping into the 
+                            capabilities of ML, advanced analytics, generative AI, and connected intelligence.
+                        </p>
+                    </div>
+                </div>
+            </div>
+            <div class="row g-4">
+                <div class="col-lg-4 col-md-6" data-aos="fade-up" data-aos-delay="100">
+                    <div class="service-card">
+                        <div class="service-icon">
+                            <i class="fas fa-database"></i>
+                        </div>
+                        <h3 class="service-title">Data Modernization</h3>
+                        <p class="service-description">
+                            Modernize your data infrastructure for the digital age. We help organizations unlock 
+                            the full potential of their data assets.
+                        </p>
+                        <ul class="service-features">
+                            <li><i class="fas fa-check"></i> Data Architecture Design</li>
+                            <li><i class="fas fa-check"></i> Legacy System Migration</li>
+                            <li><i class="fas fa-check"></i> Data Lake Implementation</li>
+                        </ul>
+                        <a href="#contact-cta" class="service-link">Learn More <i class="fas fa-arrow-right"></i></a>
+                    </div>
+                </div>
+                <div class="col-lg-4 col-md-6" data-aos="fade-up" data-aos-delay="200">
+                    <div class="service-card">
+                        <div class="service-icon">
+                            <i class="fas fa-brain"></i>
+                        </div>
+                        <h3 class="service-title">Advanced Analytics</h3>
+                        <p class="service-description">
+                            Drive insights with powerful analytics. Our advanced analytics solutions turn complex 
+                            data into actionable intelligence.
+                        </p>
+                        <ul class="service-features">
+                            <li><i class="fas fa-check"></i> Predictive Analytics</li>
+                            <li><i class="fas fa-check"></i> Machine Learning Models</li>
+                            <li><i class="fas fa-check"></i> Business Intelligence</li>
+                        </ul>
+                        <a href="#contact-cta" class="service-link">Learn More <i class="fas fa-arrow-right"></i></a>
+                    </div>
+                </div>
+                <div class="col-lg-4 col-md-6" data-aos="fade-up" data-aos-delay="300">
+                    <div class="service-card">
+                        <div class="service-icon">
+                            <i class="fas fa-network-wired"></i>
+                        </div>
+                        <h3 class="service-title">Connected Intelligence</h3>
+                        <p class="service-description">
+                            Harness the power of IoT and real-time data. Our connected intelligence solutions 
+                            enable smarter, faster decision-making.
+                        </p>
+                        <ul class="service-features">
+                            <li><i class="fas fa-check"></i> IoT Integration</li>
+                            <li><i class="fas fa-check"></i> Real-time Analytics</li>
+                            <li><i class="fas fa-check"></i> Edge Computing</li>
+                        </ul>
+                        <a href="#contact-cta" class="service-link">Learn More <i class="fas fa-arrow-right"></i></a>
+                    </div>
+                </div>
+                <div class="col-lg-4 col-md-6" data-aos="fade-up" data-aos-delay="100">
+                    <div class="service-card">
+                        <div class="service-icon">
+                            <i class="fas fa-folder-open"></i>
+                        </div>
+                        <h3 class="service-title">Data Management</h3>
+                        <p class="service-description">
+                            Ensure data quality, governance, and security. Our data management solutions help you 
+                            maintain control over your critical information assets.
+                        </p>
+                        <ul class="service-features">
+                            <li><i class="fas fa-check"></i> Master Data Management</li>
+                            <li><i class="fas fa-check"></i> Data Governance</li>
+                            <li><i class="fas fa-check"></i> Data Quality Management</li>
+                        </ul>
+                        <a href="#contact-cta" class="service-link">Learn More <i class="fas fa-arrow-right"></i></a>
+                    </div>
+                </div>
+                <div class="col-lg-4 col-md-6" data-aos="fade-up" data-aos-delay="200">
+                    <div class="service-card service-card-featured">
+                        <div class="featured-badge">
+                            <i class="fas fa-star"></i> Featured
+                        </div>
+                        <div class="service-icon">
+                            <i class="fas fa-robot"></i>
+                        </div>
+                        <h3 class="service-title">Generative AI</h3>
+                        <p class="service-description">
+                            Transform your business with cutting-edge AI. Our generative AI solutions unlock 
+                            new possibilities for innovation and efficiency.
+                        </p>
+                        <ul class="service-features">
+                            <li><i class="fas fa-check"></i> AI Strategy & Implementation</li>
+                            <li><i class="fas fa-check"></i> Custom AI Models</li>
+                            <li><i class="fas fa-check"></i> AI-Powered Automation</li>
+                        </ul>
+                        <a href="#contact-cta" class="service-link">Learn More <i class="fas fa-arrow-right"></i></a>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Cloud Services -->
+    <section id="cloud" class="services-category py-5 bg-light">
+        <div class="container">
+            <div class="row mb-5">
+                <div class="col-lg-10 mx-auto">
+                    <div class="category-header" data-aos="fade-up">
+                        <div class="category-icon">
+                            <i class="fas fa-cloud"></i>
+                        </div>
+                        <h2 class="category-title">Cloud</h2>
+                        <p class="category-description">
+                            We help enterprises scale and adapt to evolving needs within a secure hybrid or pure 
+                            cloud environment by leveraging end-to-end and outcome-based cloud solutions.
+                        </p>
+                    </div>
+                </div>
+            </div>
+            <div class="row g-4">
+                <div class="col-lg-4 col-md-6" data-aos="fade-up" data-aos-delay="100">
+                    <div class="service-card">
+                        <div class="service-icon">
+                            <i class="fas fa-server"></i>
+                        </div>
+                        <h3 class="service-title">Cloud Operations & Migration</h3>
+                        <p class="service-description">
+                            Seamlessly transition to the cloud. Our migration experts ensure smooth, secure, and 
+                            efficient cloud adoption with minimal disruption.
+                        </p>
+                        <ul class="service-features">
+                            <li><i class="fas fa-check"></i> Cloud Migration Strategy</li>
+                            <li><i class="fas fa-check"></i> Infrastructure Assessment</li>
+                            <li><i class="fas fa-check"></i> Legacy System Modernization</li>
+                        </ul>
+                        <a href="#contact-cta" class="service-link">Learn More <i class="fas fa-arrow-right"></i></a>
+                    </div>
+                </div>
+                <div class="col-lg-4 col-md-6" data-aos="fade-up" data-aos-delay="200">
+                    <div class="service-card">
+                        <div class="service-icon">
+                            <i class="fas fa-code"></i>
+                        </div>
+                        <h3 class="service-title">Cloud Application Development</h3>
+                        <p class="service-description">
+                            Build scalable cloud-native applications. We develop and integrate modern cloud 
+                            solutions that drive business innovation.
+                        </p>
+                        <ul class="service-features">
+                            <li><i class="fas fa-check"></i> Cloud-Native Development</li>
+                            <li><i class="fas fa-check"></i> Microservices Architecture</li>
+                            <li><i class="fas fa-check"></i> API Integration</li>
+                        </ul>
+                        <a href="#contact-cta" class="service-link">Learn More <i class="fas fa-arrow-right"></i></a>
+                    </div>
+                </div>
+                <div class="col-lg-4 col-md-6" data-aos="fade-up" data-aos-delay="300">
+                    <div class="service-card">
+                        <div class="service-icon">
+                            <i class="fas fa-tools"></i>
+                        </div>
+                        <h3 class="service-title">Managed Services</h3>
+                        <p class="service-description">
+                            Focus on your core business while we manage your cloud. Our managed services ensure 
+                            optimal performance, security, and cost-efficiency.
+                        </p>
+                        <ul class="service-features">
+                            <li><i class="fas fa-check"></i> 24/7 Monitoring & Support</li>
+                            <li><i class="fas fa-check"></i> Cloud Optimization</li>
+                            <li><i class="fas fa-check"></i> Security Management</li>
+                        </ul>
+                        <a href="#contact-cta" class="service-link">Learn More <i class="fas fa-arrow-right"></i></a>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Business Process Services -->
+    <section id="business-process" class="services-category py-5">
+        <div class="container">
+            <div class="row mb-5">
+                <div class="col-lg-10 mx-auto">
+                    <div class="category-header" data-aos="fade-up">
+                        <div class="category-icon">
+                            <i class="fas fa-briefcase"></i>
+                        </div>
+                        <h2 class="category-title">Business Process Services</h2>
+                        <p class="category-description">
+                            Optimize your operations with comprehensive business process services. We deliver 
+                            end-to-end solutions that enhance efficiency and drive growth.
+                        </p>
+                    </div>
+                </div>
+            </div>
+            <div class="row g-4">
+                <div class="col-lg-4 col-md-6" data-aos="fade-up" data-aos-delay="100">
+                    <div class="service-card">
+                        <div class="service-icon">
+                            <i class="fas fa-headset"></i>
+                        </div>
+                        <h3 class="service-title">Contact Center</h3>
+                        <p class="service-description">
+                            Deliver exceptional customer experiences. Our contact center solutions combine 
+                            technology and talent to elevate customer service.
+                        </p>
+                        <ul class="service-features">
+                            <li><i class="fas fa-check"></i> Omnichannel Support</li>
+                            <li><i class="fas fa-check"></i> AI-Powered Chatbots</li>
+                            <li><i class="fas fa-check"></i> Quality Assurance</li>
+                        </ul>
+                        <a href="#contact-cta" class="service-link">Learn More <i class="fas fa-arrow-right"></i></a>
+                    </div>
+                </div>
+                <div class="col-lg-4 col-md-6" data-aos="fade-up" data-aos-delay="200">
+                    <div class="service-card">
+                        <div class="service-icon">
+                            <i class="fas fa-bullhorn"></i>
+                        </div>
+                        <h3 class="service-title">Digital Marketing</h3>
+                        <p class="service-description">
+                            Amplify your brand presence. Our digital marketing services drive engagement, 
+                            conversions, and sustainable growth.
+                        </p>
+                        <ul class="service-features">
+                            <li><i class="fas fa-check"></i> SEO & SEM</li>
+                            <li><i class="fas fa-check"></i> Social Media Marketing</li>
+                            <li><i class="fas fa-check"></i> Content Strategy</li>
+                        </ul>
+                        <a href="#contact-cta" class="service-link">Learn More <i class="fas fa-arrow-right"></i></a>
+                    </div>
+                </div>
+                <div class="col-lg-4 col-md-6" data-aos="fade-up" data-aos-delay="300">
+                    <div class="service-card">
+                        <div class="service-icon">
+                            <i class="fas fa-calculator"></i>
+                        </div>
+                        <h3 class="service-title">Finance & Accounting</h3>
+                        <p class="service-description">
+                            Streamline financial operations. Our finance and accounting services ensure accuracy, 
+                            compliance, and strategic financial management.
+                        </p>
+                        <ul class="service-features">
+                            <li><i class="fas fa-check"></i> Accounts Payable/Receivable</li>
+                            <li><i class="fas fa-check"></i> Financial Reporting</li>
+                            <li><i class="fas fa-check"></i> Tax Compliance</li>
+                        </ul>
+                        <a href="#contact-cta" class="service-link">Learn More <i class="fas fa-arrow-right"></i></a>
+                    </div>
+                </div>
+                <div class="col-lg-4 col-md-6" data-aos="fade-up" data-aos-delay="100">
+                    <div class="service-card">
+                        <div class="service-icon">
+                            <i class="fas fa-users"></i>
+                        </div>
+                        <h3 class="service-title">Staff Augmentation</h3>
+                        <p class="service-description">
+                            Scale your team with top talent. Our staff augmentation services provide skilled 
+                            professionals to meet your project demands.
+                        </p>
+                        <ul class="service-features">
+                            <li><i class="fas fa-check"></i> Skilled IT Professionals</li>
+                            <li><i class="fas fa-check"></i> Flexible Engagement Models</li>
+                            <li><i class="fas fa-check"></i> Rapid Onboarding</li>
+                        </ul>
+                        <a href="#contact-cta" class="service-link">Learn More <i class="fas fa-arrow-right"></i></a>
+                    </div>
+                </div>
+                <div class="col-lg-4 col-md-6" data-aos="fade-up" data-aos-delay="200">
+                    <div class="service-card">
+                        <div class="service-icon">
+                            <i class="fas fa-balance-scale"></i>
+                        </div>
+                        <h3 class="service-title">Legal Process Outsourcing</h3>
+                        <p class="service-description">
+                            Optimize legal operations. Our LPO services deliver high-quality legal support 
+                            with cost efficiency and expertise.
+                        </p>
+                        <ul class="service-features">
+                            <li><i class="fas fa-check"></i> Document Review</li>
+                            <li><i class="fas fa-check"></i> Contract Management</li>
+                            <li><i class="fas fa-check"></i> Legal Research</li>
+                        </ul>
+                        <a href="#contact-cta" class="service-link">Learn More <i class="fas fa-arrow-right"></i></a>
+                    </div>
+                </div>
+                <div class="col-lg-4 col-md-6" data-aos="fade-up" data-aos-delay="300">
+                    <div class="service-card">
+                        <div class="service-icon">
+                            <i class="fas fa-user-tie"></i>
+                        </div>
+                        <h3 class="service-title">Recruitment Process Outsourcing</h3>
+                        <p class="service-description">
+                            Build winning teams. Our RPO services streamline recruitment with cutting-edge 
+                            technology and proven methodologies.
+                        </p>
+                        <ul class="service-features">
+                            <li><i class="fas fa-check"></i> Talent Acquisition</li>
+                            <li><i class="fas fa-check"></i> Candidate Screening</li>
+                            <li><i class="fas fa-check"></i> Employer Branding</li>
+                        </ul>
+                        <a href="#contact-cta" class="service-link">Learn More <i class="fas fa-arrow-right"></i></a>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Stats Section -->
+    <section class="stats-section py-5 bg-primary text-white">
+        <div class="container">
+            <div class="row text-center">
+                <div class="col-lg-3 col-md-6 mb-4 mb-lg-0" data-aos="fade-up">
+                    <div class="stat-item">
+                        <div class="stat-number">48+</div>
+                        <div class="stat-label">Years of Excellence</div>
+                    </div>
+                </div>
+                <div class="col-lg-3 col-md-6 mb-4 mb-lg-0" data-aos="fade-up" data-aos-delay="100">
+                    <div class="stat-item">
+                        <div class="stat-number">7700+</div>
+                        <div class="stat-label">Expert Professionals</div>
+                    </div>
+                </div>
+                <div class="col-lg-3 col-md-6 mb-4 mb-lg-0" data-aos="fade-up" data-aos-delay="200">
+                    <div class="stat-item">
+                        <div class="stat-number">16+</div>
+                        <div class="stat-label">Global Locations</div>
+                    </div>
+                </div>
+                <div class="col-lg-3 col-md-6" data-aos="fade-up" data-aos-delay="300">
+                    <div class="stat-item">
+                        <div class="stat-number">300+</div>
+                        <div class="stat-label">Active Clients</div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Call to Action -->
+    <section id="contact-cta" class="cta-section py-5">
+        <div class="container">
+            <div class="row align-items-center">
+                <div class="col-lg-8" data-aos="fade-right">
+                    <h2 class="cta-title">Ready to Transform Your Business?</h2>
+                    <p class="cta-description">
+                        Let's work together to create innovative solutions that drive your success. 
+                        Our experts are ready to help you navigate your digital transformation journey.
+                    </p>
+                </div>
+                <div class="col-lg-4 text-lg-end" data-aos="fade-left">
+                    <a href="../04_contact_Misha/contact.html" class="btn btn-primary btn-lg cta-btn">
+                        Get in Touch <i class="fas fa-arrow-right ms-2"></i>
+                    </a>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Technologies Section -->
+    <section class="technologies-section py-5 bg-light">
+        <div class="container">
+            <div class="row mb-5">
+                <div class="col-lg-8 mx-auto text-center">
+                    <h2 class="section-title" data-aos="fade-up">Our Technology Partners</h2>
+                    <p class="section-description" data-aos="fade-up" data-aos-delay="100">
+                        We partner with industry leaders to deliver cutting-edge solutions
+                    </p>
+                </div>
+            </div>
+            <div class="row align-items-center justify-content-center g-4">
+                <div class="col-lg-2 col-md-3 col-4" data-aos="zoom-in">
+                    <div class="tech-logo">
+                        <i class="fab fa-microsoft fa-3x"></i>
+                    </div>
+                </div>
+                <div class="col-lg-2 col-md-3 col-4" data-aos="zoom-in" data-aos-delay="100">
+                    <div class="tech-logo">
+                        <i class="fab fa-aws fa-3x"></i>
+                    </div>
+                </div>
+                <div class="col-lg-2 col-md-3 col-4" data-aos="zoom-in" data-aos-delay="200">
+                    <div class="tech-logo">
+                        <i class="fab fa-sap fa-3x"></i>
+                    </div>
+                </div>
+                <div class="col-lg-2 col-md-3 col-4" data-aos="zoom-in" data-aos-delay="300">
+                    <div class="tech-logo">
+                        <i class="fab fa-salesforce fa-3x"></i>
+                    </div>
+                </div>
+                <div class="col-lg-2 col-md-3 col-4" data-aos="zoom-in" data-aos-delay="400">
+                    <div class="tech-logo">
+                        <i class="fab fa-creative-commons-by fa-3x"></i>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Footer -->
+    <footer class="footer py-5 bg-dark text-white">
+        <div class="container">
+            <div class="row">
+                <div class="col-lg-4 mb-4 mb-lg-0">
+                    <img src="../01_home_Yawar/assets/logo-white.svg" alt="Systems Limited" height="40" class="mb-3">
+                    <p class="footer-description">
+                        Enabling a digital tomorrow through innovative technology solutions and strategic partnerships.
+                    </p>
+                    <div class="social-links mt-3">
+                        <a href="#" class="social-link"><i class="fab fa-facebook-f"></i></a>
+                        <a href="#" class="social-link"><i class="fab fa-twitter"></i></a>
+                        <a href="#" class="social-link"><i class="fab fa-linkedin-in"></i></a>
+                        <a href="#" class="social-link"><i class="fab fa-instagram"></i></a>
+                    </div>
+                </div>
+                <div class="col-lg-2 col-md-3 col-6 mb-4 mb-lg-0">
+                    <h5 class="footer-title">Services</h5>
+                    <ul class="footer-links">
+                        <li><a href="#digital">Digital</a></li>
+                        <li><a href="#data-analytics">Data & Analytics</a></li>
+                        <li><a href="#cloud">Cloud</a></li>
+                        <li><a href="#business-process">Business Process</a></li>
+                    </ul>
+                </div>
+                <div class="col-lg-2 col-md-3 col-6 mb-4 mb-lg-0">
+                    <h5 class="footer-title">Company</h5>
+                    <ul class="footer-links">
+                        <li><a href="../01_home_Yawar/index.html">Home</a></li>
+                        <li><a href="../03_insights_Salar/insights.html">Insights</a></li>
+                        <li><a href="../04_contact_Misha/contact.html">Contact</a></li>
+                        <li><a href="#">Careers</a></li>
+                    </ul>
+                </div>
+                <div class="col-lg-4 col-md-6">
+                    <h5 class="footer-title">Subscribe to Newsletter</h5>
+                    <p class="footer-newsletter-text">Stay updated with our latest news and insights</p>
+                    <form class="newsletter-form">
+                        <div class="input-group">
+                            <input type="email" class="form-control" placeholder="Enter your email">
+                            <button class="btn btn-primary" type="submit">
+                                <i class="fas fa-paper-plane"></i>
+                            </button>
+                        </div>
+                    </form>
+                </div>
+            </div>
+            <hr class="footer-divider my-4">
+            <div class="row">
+                <div class="col-lg-6 text-center text-lg-start">
+                    <p class="footer-copyright mb-0">© 2026 Systems Limited. All Rights Reserved.</p>
+                </div>
+                <div class="col-lg-6 text-center text-lg-end">
+                    <a href="#" class="footer-link">Privacy Policy</a>
+                    <span class="mx-2">|</span>
+                    <a href="#" class="footer-link">Terms & Conditions</a>
+                </div>
             </div>
         </div>
     </footer>
 
+    <!-- Scroll to Top Button -->
+    <button class="scroll-to-top" id="scrollToTop">
+        <i class="fas fa-chevron-up"></i>
+    </button>
+
+    <!-- Bootstrap JS -->
     <script src="../common/bootstrap.bundle.min.js"></script>
+    
+    <!-- AOS Animation Library -->
+    <script src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script>
+    
+    <!-- Custom JS -->
     <script src="script.js"></script>
 </body>
 </html>
