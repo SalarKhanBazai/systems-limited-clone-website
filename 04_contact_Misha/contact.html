@@ -7,6 +7,10 @@
     <link rel="stylesheet" href="../common/bootstrap.min.css">
     <link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@300;400;500;600;700&display=swap" rel="stylesheet">
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+    
+    <!-- AOS Animation CSS -->
+    <link href="https://unpkg.com/aos@2.3.1/dist/aos.css" rel="stylesheet">
+    
     <link rel="stylesheet" href="style.css">
 </head>
 <body>
@@ -70,23 +74,526 @@
         </div>
     </div>
 
-    <!-- Main Content -->
-    <main>
-        <!-- Page Header -->
-        <section class="page-header">
-            <div class="container">
-                <h1 class="page-title">Contact Us</h1>
-                <p class="page-subtitle">Get in touch with our team</p>
+    <!-- Hero Section -->
+    <section class="hero-section">
+        <div class="hero-overlay"></div>
+        <div class="container">
+            <div class="row align-items-center min-vh-100">
+                <div class="col-lg-8 mx-auto text-center hero-content">
+                    <h1 class="hero-title" data-aos="fade-up">Contact Us</h1>
+                    <p class="hero-subtitle" data-aos="fade-up" data-aos-delay="100">
+                        Let's start a conversation about transforming your business
+                    </p>
+                    <div class="hero-scroll" data-aos="fade-up" data-aos-delay="200">
+                        <span>Scroll to Connect</span>
+                        <i class="fas fa-chevron-down"></i>
+                    </div>
+                </div>
             </div>
-        </section>
+        </div>
+        <!-- Wave Divider -->
+        <div class="wave-divider">
+            <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1440 320">
+                <path fill="#ffffff" fill-opacity="1" d="M0,96L48,112C96,128,192,160,288,160C384,160,480,128,576,112C672,96,768,96,864,112C960,128,1056,160,1152,160C1248,160,1344,128,1392,112L1440,96L1440,320L1392,320C1344,320,1248,320,1152,320C1056,320,960,320,864,320C768,320,672,320,576,320C480,320,384,320,288,320C192,320,96,320,48,320L0,320Z"></path>
+            </svg>
+        </div>
+    </section>
 
-        <!-- Contact Content Goes Here -->
-        <section class="content-section">
-            <div class="container">
-                <!-- Member 4 adds content here -->
+    <!-- Contact Info Cards -->
+    <section class="contact-cards-section py-5">
+        <div class="container">
+            <div class="row">
+                <div class="col-lg-4 col-md-6 mb-4" data-aos="fade-up" data-aos-delay="100">
+                    <div class="contact-card">
+                        <div class="contact-icon">
+                            <i class="fas fa-map-marker-alt"></i>
+                        </div>
+                        <h4>Visit Us</h4>
+                        <p>Systems Limited Head Office<br>
+                        Evacuee Trust Complex, F-5/1,<br>
+                        Islamabad, Pakistan</p>
+                        <a href="#map" class="contact-card-link">View on Map <i class="fas fa-arrow-right"></i></a>
+                    </div>
+                </div>
+                <div class="col-lg-4 col-md-6 mb-4" data-aos="fade-up" data-aos-delay="200">
+                    <div class="contact-card">
+                        <div class="contact-icon">
+                            <i class="fas fa-phone-alt"></i>
+                        </div>
+                        <h4>Call Us</h4>
+                        <p>Main: +92 42 111-797-836<br>
+                        Sales: +92 51 111-797-836<br>
+                        Support: +92 21 111-797-836</p>
+                    </div>
+                </div>
+                <div class="col-lg-4 col-md-6 mb-4" data-aos="fade-up" data-aos-delay="300">
+                    <div class="contact-card">
+                        <div class="contact-icon">
+                            <i class="fas fa-envelope"></i>
+                        </div>
+                        <h4>Email Us</h4>
+                        <p>General: info@systemsltd.com<br>
+                        Sales: sales@systemsltd.com<br>
+                        Careers: careers@systemsltd.com</p>
+                        <a href="mailto:info@systemsltd.com" class="contact-card-link">Send Email <i class="fas fa-arrow-right"></i></a>
+                    </div>
+                </div>
             </div>
-        </section>
-    </main>
+        </div>
+    </section>
+
+    <!-- Why Connect Section -->
+    <section class="why-connect-section py-5 bg-light">
+        <div class="container">
+            <div class="row mb-5">
+                <div class="col-lg-8 mx-auto text-center">
+                    <h2 class="section-title" data-aos="fade-up">Why Connect With Us?</h2>
+                    <p class="section-description" data-aos="fade-up" data-aos-delay="100">
+                        We're committed to delivering excellence and building lasting partnerships
+                    </p>
+                </div>
+            </div>
+            <div class="row g-4">
+                <div class="col-lg-3 col-md-6" data-aos="fade-up" data-aos-delay="100">
+                    <div class="feature-box">
+                        <div class="feature-icon">
+                            <i class="fas fa-clock"></i>
+                        </div>
+                        <h5>24/7 Support</h5>
+                        <p>Round-the-clock assistance for your business needs</p>
+                    </div>
+                </div>
+                <div class="col-lg-3 col-md-6" data-aos="fade-up" data-aos-delay="200">
+                    <div class="feature-box">
+                        <div class="feature-icon">
+                            <i class="fas fa-users"></i>
+                        </div>
+                        <h5>Expert Team</h5>
+                        <p>7700+ professionals ready to help you succeed</p>
+                    </div>
+                </div>
+                <div class="col-lg-3 col-md-6" data-aos="fade-up" data-aos-delay="300">
+                    <div class="feature-box">
+                        <div class="feature-icon">
+                            <i class="fas fa-globe"></i>
+                        </div>
+                        <h5>Global Reach</h5>
+                        <p>16+ locations worldwide for local support</p>
+                    </div>
+                </div>
+                <div class="col-lg-3 col-md-6" data-aos="fade-up" data-aos-delay="400">
+                    <div class="feature-box">
+                        <div class="feature-icon">
+                            <i class="fas fa-award"></i>
+                        </div>
+                        <h5>Proven Track Record</h5>
+                        <p>50+ years of delivering excellence</p>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Main Contact Section -->
+    <section class="main-contact-section py-5">
+        <div class="container">
+            <div class="row">
+                <!-- Contact Form -->
+                <div class="col-lg-7 mb-4" data-aos="fade-right">
+                    <div class="contact-form-wrapper">
+                        <h2 class="section-title">Send us a Message</h2>
+                        <p class="section-subtitle">Fill out the form below and our team will get back to you within 24 hours.</p>
+                        
+                        <form id="contactForm" class="contact-form">
+                            <div class="row">
+                                <div class="col-md-6 mb-3">
+                                    <div class="form-group">
+                                        <label for="firstName">First Name *</label>
+                                        <input type="text" id="firstName" name="firstName" class="form-control" required>
+                                    </div>
+                                </div>
+                                <div class="col-md-6 mb-3">
+                                    <div class="form-group">
+                                        <label for="lastName">Last Name *</label>
+                                        <input type="text" id="lastName" name="lastName" class="form-control" required>
+                                    </div>
+                                </div>
+                            </div>
+                            
+                            <div class="row">
+                                <div class="col-md-6 mb-3">
+                                    <div class="form-group">
+                                        <label for="email">Email Address *</label>
+                                        <input type="email" id="email" name="email" class="form-control" required>
+                                    </div>
+                                </div>
+                                <div class="col-md-6 mb-3">
+                                    <div class="form-group">
+                                        <label for="phone">Phone Number</label>
+                                        <input type="tel" id="phone" name="phone" class="form-control">
+                                    </div>
+                                </div>
+                            </div>
+                            
+                            <div class="form-group mb-3">
+                                <label for="company">Company Name</label>
+                                <input type="text" id="company" name="company" class="form-control">
+                            </div>
+                            
+                            <div class="form-group mb-3">
+                                <label for="subject">Subject *</label>
+                                <select id="subject" name="subject" class="form-control" required>
+                                    <option value="">Select a subject</option>
+                                    <option value="general">General Inquiry</option>
+                                    <option value="services">Services Information</option>
+                                    <option value="support">Technical Support</option>
+                                    <option value="partnership">Partnership Opportunity</option>
+                                    <option value="careers">Career Opportunities</option>
+                                    <option value="other">Other</option>
+                                </select>
+                            </div>
+                            
+                            <div class="form-group mb-4">
+                                <label for="message">Message *</label>
+                                <textarea id="message" name="message" class="form-control" rows="5" required></textarea>
+                            </div>
+                            
+                            <button type="submit" class="btn-submit">
+                                <span>Send Message</span>
+                                <i class="fas fa-paper-plane"></i>
+                            </button>
+                        </form>
+                        
+                        <!-- Success Message -->
+                        <div id="successMessage" class="alert-success">
+                            <i class="fas fa-check-circle"></i>
+                            <span>Thank you! Your message has been sent successfully.</span>
+                        </div>
+                    </div>
+                </div>
+                
+                <!-- Office Locations & Additional Info -->
+                <div class="col-lg-5 mb-4" data-aos="fade-left">
+                    <div class="office-locations">
+                        <h2 class="section-title">Our Offices</h2>
+                        <p class="section-subtitle mb-4">We have offices across Pakistan to serve you better.</p>
+                        
+                        <div class="office-item">
+                            <div class="office-header">
+                                <h5><i class="fas fa-building"></i> Islamabad Office</h5>
+                                <span class="badge-primary">Head Office</span>
+                            </div>
+                            <p class="office-address">
+                                Evacuee Trust Complex, F-5/1<br>
+                                Islamabad, Pakistan<br>
+                                <strong>Phone:</strong> +92 51 111-797-836
+                            </p>
+                            <div class="office-hours">
+                                <i class="fas fa-clock"></i>
+                                <span>Mon - Fri: 9:00 AM - 6:00 PM</span>
+                            </div>
+                        </div>
+                        
+                        <div class="office-item">
+                            <div class="office-header">
+                                <h5><i class="fas fa-building"></i> Lahore Office</h5>
+                            </div>
+                            <p class="office-address">
+                                Systems House, 23-KM<br>
+                                Multan Road, Lahore, Pakistan<br>
+                                <strong>Phone:</strong> +92 42 111-797-836
+                            </p>
+                            <div class="office-hours">
+                                <i class="fas fa-clock"></i>
+                                <span>Mon - Fri: 9:00 AM - 6:00 PM</span>
+                            </div>
+                        </div>
+                        
+                        <div class="office-item">
+                            <div class="office-header">
+                                <h5><i class="fas fa-building"></i> Karachi Office</h5>
+                            </div>
+                            <p class="office-address">
+                                Plot No. 2B, 3rd Floor<br>
+                                Mumtaz Hassan Road, Karachi, Pakistan<br>
+                                <strong>Phone:</strong> +92 21 111-797-836
+                            </p>
+                            <div class="office-hours">
+                                <i class="fas fa-clock"></i>
+                                <span>Mon - Fri: 9:00 AM - 6:00 PM</span>
+                            </div>
+                        </div>
+                        
+                        <!-- Business Hours Alert -->
+                        <div class="business-alert">
+                            <i class="fas fa-info-circle"></i>
+                            <div>
+                                <strong>Weekend & Holidays</strong>
+                                <p>Our offices are closed on weekends and public holidays. For urgent support, please email us.</p>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+<section class="office-photos-section">
+    <div class="container">
+        <h2 class="section-title text-center" data-aos="fade-up">Our Office Space</h2>
+        <div class="photo-grid">
+            <div class="office-photo-item" data-aos="zoom-in" data-aos-delay="100">
+                <img src="assets/office.webp" alt="Main Office">
+                <div class="photo-overlay"><span>Innovation Hub</span></div>
+            </div>
+            <div class="office-photo-item" data-aos="zoom-in" data-aos-delay="200">
+                <img src="assets/studio.webp" alt="Design Studio">
+                <div class="photo-overlay"><span>Creative Studio</span></div>
+            </div>
+            <div class="office-photo-item" data-aos="zoom-in" data-aos-delay="300">
+                <img src="assets/workspace.webp" alt="Executive Workspace">
+                <div class="photo-overlay"><span>Collaboration Zone</span></div>
+            </div>
+        </div>
+    </div>
+</section>
+
+    <!-- Stats Section -->
+    <section class="stats-section py-5 bg-gradient">
+        <div class="container">
+            <div class="row text-center">
+                <div class="col-lg-3 col-md-6 mb-4" data-aos="fade-up" data-aos-delay="100">
+                    <div class="stat-item">
+                        <div class="stat-number" data-count="7700">0+</div>
+                        <div class="stat-label">Expert Professionals</div>
+                    </div>
+                </div>
+                <div class="col-lg-3 col-md-6 mb-4" data-aos="fade-up" data-aos-delay="200">
+                    <div class="stat-item">
+                        <div class="stat-number" data-count="16">0+</div>
+                        <div class="stat-label">Global Locations</div>
+                    </div>
+                </div>
+                <div class="col-lg-3 col-md-6 mb-4" data-aos="fade-up" data-aos-delay="300">
+                    <div class="stat-item">
+                        <div class="stat-number" data-count="300">0+</div>
+                        <div class="stat-label">Active Clients</div>
+                    </div>
+                </div>
+                <div class="col-lg-3 col-md-6 mb-4" data-aos="fade-up" data-aos-delay="400">
+                    <div class="stat-item">
+                        <div class="stat-number" data-count="50">0+</div>
+                        <div class="stat-label">Years of Excellence</div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Testimonials Section -->
+    <section class="testimonials-section py-5">
+        <div class="container">
+            <div class="row mb-5">
+                <div class="col-lg-8 mx-auto text-center">
+                    <h2 class="section-title" data-aos="fade-up">What Our Clients Say</h2>
+                    <p class="section-description" data-aos="fade-up" data-aos-delay="100">
+                        Hear from businesses that have transformed with our solutions
+                    </p>
+                </div>
+            </div>
+            <div class="row g-4">
+                <div class="col-lg-4 col-md-6" data-aos="fade-up" data-aos-delay="100">
+                    <div class="testimonial-card">
+                        <div class="testimonial-rating">
+                            <i class="fas fa-star"></i>
+                            <i class="fas fa-star"></i>
+                            <i class="fas fa-star"></i>
+                            <i class="fas fa-star"></i>
+                            <i class="fas fa-star"></i>
+                        </div>
+                        <p class="testimonial-text">
+                            "Systems Limited transformed our digital infrastructure. Their team's expertise and dedication exceeded our expectations."
+                        </p>
+                        <div class="testimonial-author">
+                            <div class="author-avatar">
+                                <i class="fas fa-user"></i>
+                            </div>
+                            <div class="author-info">
+                                <h6>Ahmed Khan</h6>
+                                <span>CEO, TechCorp</span>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-lg-4 col-md-6" data-aos="fade-up" data-aos-delay="200">
+                    <div class="testimonial-card">
+                        <div class="testimonial-rating">
+                            <i class="fas fa-star"></i>
+                            <i class="fas fa-star"></i>
+                            <i class="fas fa-star"></i>
+                            <i class="fas fa-star"></i>
+                            <i class="fas fa-star"></i>
+                        </div>
+                        <p class="testimonial-text">
+                            "Outstanding service and support. They truly understand business needs and deliver innovative solutions."
+                        </p>
+                        <div class="testimonial-author">
+                            <div class="author-avatar">
+                                <i class="fas fa-user"></i>
+                            </div>
+                            <div class="author-info">
+                                <h6>Sarah Ahmed</h6>
+                                <span>Director, GlobalBank</span>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-lg-4 col-md-6" data-aos="fade-up" data-aos-delay="300">
+                    <div class="testimonial-card">
+                        <div class="testimonial-rating">
+                            <i class="fas fa-star"></i>
+                            <i class="fas fa-star"></i>
+                            <i class="fas fa-star"></i>
+                            <i class="fas fa-star"></i>
+                            <i class="fas fa-star"></i>
+                        </div>
+                        <p class="testimonial-text">
+                            "Professional, reliable, and innovative. Systems Limited is our trusted technology partner."
+                        </p>
+                        <div class="testimonial-author">
+                            <div class="author-avatar">
+                                <i class="fas fa-user"></i>
+                            </div>
+                            <div class="author-info">
+                                <h6>Bilal Iqbal</h6>
+                                <span>CTO, RetailPlus</span>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Map Section -->
+    <section id="map" class="map-section py-5 bg-light">
+        <div class="container">
+            <div class="row mb-4">
+                <div class="col-lg-8 mx-auto text-center">
+                    <h2 class="section-title" data-aos="fade-up">Find Us on the Map</h2>
+                    <p class="section-description" data-aos="fade-up" data-aos-delay="100">
+                        Visit our head office in Islamabad or any of our regional offices
+                    </p>
+                </div>
+            </div>
+            <div class="row">
+                <div class="col-12" data-aos="fade-up" data-aos-delay="200">
+                    <div class="map-container">
+                        <iframe 
+                            src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3318.5449179165726!2d73.05851547542!3d33.713741573299486!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x38dfbfd07891722f%3A0x6059515c3bdb02b6!2sSystems%20Limited!5e0!3m2!1sen!2s!4v1706000000000!5m2!1sen!2s" 
+                            width="100%" 
+                            height="450" 
+                            style="border:0;" 
+                            allowfullscreen="" 
+                            loading="lazy" 
+                            referrerpolicy="no-referrer-when-downgrade">
+                        </iframe>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- FAQ Section -->
+    <section class="faq-section py-5">
+        <div class="container">
+            <div class="row mb-5">
+                <div class="col-lg-8 mx-auto text-center">
+                    <h2 class="section-title" data-aos="fade-up">Frequently Asked Questions</h2>
+                    <p class="section-description" data-aos="fade-up" data-aos-delay="100">
+                        Quick answers to common questions
+                    </p>
+                </div>
+            </div>
+            <div class="row">
+                <div class="col-lg-8 mx-auto">
+                    <div class="accordion" id="faqAccordion">
+                        <div class="accordion-item" data-aos="fade-up" data-aos-delay="100">
+                            <h2 class="accordion-header">
+                                <button class="accordion-button" type="button" data-bs-toggle="collapse" data-bs-target="#faq1">
+                                    What services does Systems Limited offer?
+                                </button>
+                            </h2>
+                            <div id="faq1" class="accordion-collapse collapse show" data-bs-parent="#faqAccordion">
+                                <div class="accordion-body">
+                                    We offer comprehensive digital transformation services including cloud solutions, data analytics, enterprise software development, and business process services. Our expertise spans across multiple industries and technologies.
+                                </div>
+                            </div>
+                        </div>
+                        
+                        <div class="accordion-item" data-aos="fade-up" data-aos-delay="200">
+                            <h2 class="accordion-header">
+                                <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#faq2">
+                                    How quickly can I expect a response?
+                                </button>
+                            </h2>
+                            <div id="faq2" class="accordion-collapse collapse" data-bs-parent="#faqAccordion">
+                                <div class="accordion-body">
+                                    We aim to respond to all inquiries within 24 hours during business days. For urgent matters, please call our main office line, and our team will assist you immediately.
+                                </div>
+                            </div>
+                        </div>
+                        
+                        <div class="accordion-item" data-aos="fade-up" data-aos-delay="300">
+                            <h2 class="accordion-header">
+                                <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#faq3">
+                                    Do you offer support for existing clients?
+                                </button>
+                            </h2>
+                            <div id="faq3" class="accordion-collapse collapse" data-bs-parent="#faqAccordion">
+                                <div class="accordion-body">
+                                    Yes! We provide 24/7 support for all our clients. You can reach our support team through the dedicated support line or email support@systemsltd.com for immediate assistance.
+                                </div>
+                            </div>
+                        </div>
+                        
+                        <div class="accordion-item" data-aos="fade-up" data-aos-delay="400">
+                            <h2 class="accordion-header">
+                                <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#faq4">
+                                    Can I schedule a visit to your office?
+                                </button>
+                            </h2>
+                            <div id="faq4" class="accordion-collapse collapse" data-bs-parent="#faqAccordion">
+                                <div class="accordion-body">
+                                    Absolutely! We welcome office visits. Please contact us in advance to schedule an appointment, and our team will be happy to arrange a meeting at any of our locations.
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- CTA Section -->
+    <section class="cta-section py-5">
+        <div class="container">
+            <div class="row align-items-center">
+                <div class="col-lg-8" data-aos="fade-right">
+                    <h2 class="cta-title">Ready to Get Started?</h2>
+                    <p class="cta-description">
+                        Join 300+ companies that trust Systems Limited for their digital transformation journey. 
+                        Let's discuss how we can help your business grow.
+                    </p>
+                </div>
+                <div class="col-lg-4 text-lg-end" data-aos="fade-left">
+                    <a href="#contactForm" class="btn btn-cta">
+                        Start a Conversation <i class="fas fa-arrow-right ms-2"></i>
+                    </a>
+                </div>
+            </div>
+        </div>
+    </section>
 
     <!-- Footer -->
     <footer class="footer">
@@ -139,7 +646,16 @@
         </div>
     </footer>
 
+    <!-- Scroll to Top Button -->
+    <button class="scroll-to-top" id="scrollToTop">
+        <i class="fas fa-chevron-up"></i>
+    </button>
+
     <script src="../common/bootstrap.bundle.min.js"></script>
+    
+    <!-- AOS Animation Library -->
+    <script src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script>
+    
     <script src="script.js"></script>
 </body>
 </html>
